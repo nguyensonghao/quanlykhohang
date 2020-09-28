@@ -8,7 +8,7 @@ export default {
   error: '#F10101',
   gray: '#828282',
   black: '#000',
-
+  lightGray: '#919191',
 
   placeholder: '#828282',
   inputText: '#000'

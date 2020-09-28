@@ -6,10 +6,17 @@ export default StyleSheet.create({
   },
   container: {
     flex: 1,
-    paddingHorizontal: 15
+    paddingHorizontal: 15,
+    backgroundColor: 'white'
   },
   center: {
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  p0: {
+    padding: 0,
+    paddingVertical: 0,
+    paddingHorizontal: 0
   }
 })

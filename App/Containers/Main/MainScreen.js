@@ -19,7 +19,7 @@ export default class MainScreen extends Component {
           component={HomeScreen} 
           navigationOptions={{
             header: {
-              visible: true
+              visible: false
             }
           }}
           options={{
