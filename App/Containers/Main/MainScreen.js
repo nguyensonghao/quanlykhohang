@@ -17,6 +17,11 @@ export default class MainScreen extends Component {
         <Tab.Screen 
           name={SCREEN.HOME.TITLE} 
           component={HomeScreen} 
+          navigationOptions={{
+            header: {
+              visible: true
+            }
+          }}
           options={{
             title: 'Trang chủ'
           }}

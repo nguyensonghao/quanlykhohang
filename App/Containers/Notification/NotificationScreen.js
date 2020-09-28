@@ -28,6 +28,10 @@ class NotificationScreen extends Component {
       listNoti: mocks
     })    
   }
+
+  viewNotification(notification) {
+    alert(notification.id);
+  }
   
   render() {
     const { listNoti } = this.state;
@@ -39,10 +43,10 @@ class NotificationScreen extends Component {
           renderItem={({ item, index, separators }) => (
             <TouchableHighlight
               key={item.key}
-              onPress={() => this._onPress(item)}
+              onPress={() => this.viewNotification(item)}
               onShowUnderlay={separators.highlight}
-              onHideUnderlay={separators.unhighlight}>              
-              <NotificationItem notification={item}/>
+              onHideUnderlay={separators.unhighlight}>
+              <NotificationItem/>
             </TouchableHighlight>
           )}
         />

@@ -17,7 +17,7 @@ const App: () => React$Node = () => {
           name={SCREEN.MAIN.NAME}
           component={MainScreen}
           options={{ 
-            title: SCREEN.MAIN.TITLE
+            title: SCREEN.MAIN.TITLE,
           }}
         />
         <Stack.Screen
