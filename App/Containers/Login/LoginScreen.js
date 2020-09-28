@@ -3,13 +3,16 @@ import {
   View, 
   Text,
   TextInput,
-  TouchableHighlight
+  Image
 } from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
-
-import Style from './LoginScreenStyle';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { WEBSITE } from '../../Constants/Config';
 import MESSAGE from '../../Constants/Message';
+import { Colors, commom } from "../../Themes";
+import styles from "./styles";
+import InputDefault from "../../Components/Button";
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 export default class LoginScreen extends ValidationComponent {
   constructor(props) {
@@ -35,30 +38,48 @@ export default class LoginScreen extends ValidationComponent {
     const { username, password } = this.state;
 
     return (
-      <View>
-        <TextInput 
-          style={Style.input} 
-          value={username} 
-          placeholder="Tài khoản"
-          onChangeText={text => this.setState({username: text})}
-        />
-        {this.isFieldInError('username') ? <Text style={Style.messageValidate}>{MESSAGE.USERNAME_REQUIRED}</Text> : null}
-
-        <TextInput 
-          style={Style.input} 
-          value={password}
-          ecureTextEntry={true}
-          placeholder="Mật khẩu"
-          onChangeText={text => this.setState({password: text})}
-        />        
-        {this.isFieldInError('password') ? <Text style={Style.messageValidate}>{MESSAGE.PASSWORD_REQUIRED}</Text> : null}
-
-        <TouchableHighlight onPress={() => this.login()}>
-          <Text>Đăng nhập</Text>
-        </TouchableHighlight>
-
-        <Text>Dùng tài khoản {WEBSITE.NAME} để đăng nhập</Text>
-      </View>
+      <SafeAreaView style={commom.safeArea}>
+        <KeyboardAwareScrollView>
+          <View style={[commom.container]}>
+          <View style={styles.logoWrap}>
+            <Image style={styles.logo} source={require('../../Assets/Images/logo.png')}/>
+          </View>
+          <View style={styles.inputWrap}>
+            <TextInput 
+              placeholderTextColor={Colors.placeholder}
+              style={styles.input} 
+              value={username} 
+              placeholder="Tên đăng nhập"
+              onChangeText={text => this.setState({username: text})}
+            />
+            {this.isFieldInError('username') ? <Text style={styles.errorText}>{MESSAGE.USERNAME_REQUIRED}</Text> : null}
+          </View>
+          <View style={styles.inputWrap}>
+            <TextInput 
+              placeholderTextColor={Colors.placeholder}
+              secureTextEntry="true"
+              style={styles.input} 
+              value={password}
+              ecureTextEntry={true}
+              placeholder="Mật khẩu"
+              onChangeText={text => this.setState({password: text})}
+            />        
+            {this.isFieldInError('password') ? <Text style={styles.errorText}>{MESSAGE.PASSWORD_REQUIRED}</Text> : null}
+          </View>
+          <InputDefault 
+            text="Đăng nhập" 
+            onPress={() => this.login()}
+            containerStl={styles.btnLogin}
+          />
+          <Text style={styles.textSmall}>
+            Dùng tài khoản 
+            <Text style={styles.textBold}> {WEBSITE.NAME} </Text>
+            để đăng nhập
+            </Text>
+        </View>
+        </KeyboardAwareScrollView>
+      </SafeAreaView>
+   
     )
   }
 }

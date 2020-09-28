@@ -11,11 +11,19 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		21412CA21AC2EBE88FEE7374 /* libPods-quanlykho-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 338A7E8959A76AE9AE16E297 /* libPods-quanlykho-tvOS.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* quanlykhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* quanlykhoTests.m */; };
+		36CFC38A6E986A05E656D561 /* libPods-quanlykho-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DEF0AA484711B5F268D491 /* libPods-quanlykho-tvOSTests.a */; };
+		4CB545287F3D43CD91FF1210 /* Muli-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1350CB9F98B455CBB6190AB /* Muli-Bold.ttf */; };
+		715B3C1E1EB2487CA5EE4B78 /* Muli-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B73A9276AD1C4523974DAE16 /* Muli-Semibold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A50381E9134B42249EF255CA /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21240BA5795A438882DDDE91 /* Muli-Regular.ttf */; };
+		B3B0DD084EE174B8EFA71C75 /* libPods-quanlykho-quanlykhoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D74E5655D8EC71A6AD88AC1 /* libPods-quanlykho-quanlykhoTests.a */; };
+		F1D1E1243CCEF1D9188E0CB9 /* libPods-quanlykho.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E84DE4593E56B1B07DACF3 /* libPods-quanlykho.a */; };
+		315BB7E94AFE4F9D947E9DCB /* Muli.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F5916EECFCF4D87B190A486 /* Muli.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +54,27 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = quanlykho/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = quanlykho/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = quanlykho/main.m; sourceTree = "<group>"; };
+		20B9CA5920F54C87C03EC32D /* Pods-quanlykho-quanlykhoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanlykho-quanlykhoTests.release.xcconfig"; path = "Target Support Files/Pods-quanlykho-quanlykhoTests/Pods-quanlykho-quanlykhoTests.release.xcconfig"; sourceTree = "<group>"; };
+		21240BA5795A438882DDDE91 /* Muli-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Muli-Regular.ttf"; path = "../App/Assets/fonts/Muli-Regular.ttf"; sourceTree = "<group>"; };
+		27A3DA8B16970942BABE8DA4 /* Pods-quanlykho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanlykho.release.xcconfig"; path = "Target Support Files/Pods-quanlykho/Pods-quanlykho.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* quanlykho-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quanlykho-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* quanlykho-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quanlykho-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		338A7E8959A76AE9AE16E297 /* libPods-quanlykho-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quanlykho-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9C2D1CFFF43D72DCA86165 /* Pods-quanlykho-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanlykho-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-quanlykho-tvOSTests/Pods-quanlykho-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D74E5655D8EC71A6AD88AC1 /* libPods-quanlykho-quanlykhoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quanlykho-quanlykhoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6858B7F0D6ACCD35A8D9B33D /* Pods-quanlykho-quanlykhoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanlykho-quanlykhoTests.debug.xcconfig"; path = "Target Support Files/Pods-quanlykho-quanlykhoTests/Pods-quanlykho-quanlykhoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72E84DE4593E56B1B07DACF3 /* libPods-quanlykho.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quanlykho.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E869FAD1A406A6667C4EB71 /* Pods-quanlykho-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanlykho-tvOS.release.xcconfig"; path = "Target Support Files/Pods-quanlykho-tvOS/Pods-quanlykho-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = quanlykho/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5DEF0AA484711B5F268D491 /* libPods-quanlykho-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quanlykho-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73A9276AD1C4523974DAE16 /* Muli-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Muli-Semibold.ttf"; path = "../App/Assets/fonts/Muli-Semibold.ttf"; sourceTree = "<group>"; };
+		D032E0607E0DA70B0086759E /* Pods-quanlykho-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanlykho-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-quanlykho-tvOSTests/Pods-quanlykho-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9C721DA74CB7650D41FC5BF /* Pods-quanlykho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanlykho.debug.xcconfig"; path = "Target Support Files/Pods-quanlykho/Pods-quanlykho.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F1350CB9F98B455CBB6190AB /* Muli-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Muli-Bold.ttf"; path = "../App/Assets/fonts/Muli-Bold.ttf"; sourceTree = "<group>"; };
+		F1FB5ADCAD22E1D67F758288 /* Pods-quanlykho-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanlykho-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-quanlykho-tvOS/Pods-quanlykho-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6F5916EECFCF4D87B190A486 /* Muli.ttf */ = {isa = PBXFileReference; name = "Muli.ttf"; path = "../App/Assets/fonts/Muli.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B0DD084EE174B8EFA71C75 /* libPods-quanlykho-quanlykhoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D1E1243CCEF1D9188E0CB9 /* libPods-quanlykho.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21412CA21AC2EBE88FEE7374 /* libPods-quanlykho-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CFC38A6E986A05E656D561 /* libPods-quanlykho-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +149,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				72E84DE4593E56B1B07DACF3 /* libPods-quanlykho.a */,
+				5D74E5655D8EC71A6AD88AC1 /* libPods-quanlykho-quanlykhoTests.a */,
+				338A7E8959A76AE9AE16E297 /* libPods-quanlykho-tvOS.a */,
+				B5DEF0AA484711B5F268D491 /* libPods-quanlykho-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +172,8 @@
 				00E356EF1AD99517003FC87E /* quanlykhoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				F09D28D027574AEA77CF3E6F /* Pods */,
+				A5206DDFE3264BB88441C029 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -157,6 +191,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A5206DDFE3264BB88441C029 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1350CB9F98B455CBB6190AB /* Muli-Bold.ttf */,
+				21240BA5795A438882DDDE91 /* Muli-Regular.ttf */,
+				B73A9276AD1C4523974DAE16 /* Muli-Semibold.ttf */,
+				6F5916EECFCF4D87B190A486 /* Muli.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F09D28D027574AEA77CF3E6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9C721DA74CB7650D41FC5BF /* Pods-quanlykho.debug.xcconfig */,
+				27A3DA8B16970942BABE8DA4 /* Pods-quanlykho.release.xcconfig */,
+				6858B7F0D6ACCD35A8D9B33D /* Pods-quanlykho-quanlykhoTests.debug.xcconfig */,
+				20B9CA5920F54C87C03EC32D /* Pods-quanlykho-quanlykhoTests.release.xcconfig */,
+				F1FB5ADCAD22E1D67F758288 /* Pods-quanlykho-tvOS.debug.xcconfig */,
+				7E869FAD1A406A6667C4EB71 /* Pods-quanlykho-tvOS.release.xcconfig */,
+				D032E0607E0DA70B0086759E /* Pods-quanlykho-tvOSTests.debug.xcconfig */,
+				5A9C2D1CFFF43D72DCA86165 /* Pods-quanlykho-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "quanlykhoTests" */;
 			buildPhases = (
+				B992B185791EBC0BE2BEB5D8 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				4F5EC0CA9670FB304BF4C4AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,11 +244,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "quanlykho" */;
 			buildPhases = (
+				A8AF4D11FA53204D198FA1F9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				D1CB20254B92C2FC64E40623 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "quanlykho-tvOS" */;
 			buildPhases = (
+				464ADAEB97F51C7787646EC5 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -220,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "quanlykho-tvOSTests" */;
 			buildPhases = (
+				013597F1029D6C451D689B12 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -295,6 +361,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				4CB545287F3D43CD91FF1210 /* Muli-Bold.ttf in Resources */,
+				A50381E9134B42249EF255CA /* Muli-Regular.ttf in Resources */,
+				715B3C1E1EB2487CA5EE4B78 /* Muli-Semibold.ttf in Resources */,
+				315BB7E94AFE4F9D947E9DCB /* Muli.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +398,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		013597F1029D6C451D689B12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quanlykho-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -343,6 +435,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		464ADAEB97F51C7787646EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quanlykho-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F5EC0CA9670FB304BF4C4AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quanlykho-quanlykhoTests/Pods-quanlykho-quanlykhoTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quanlykho-quanlykhoTests/Pods-quanlykho-quanlykhoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8AF4D11FA53204D198FA1F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quanlykho-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B992B185791EBC0BE2BEB5D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quanlykho-quanlykhoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1CB20254B92C2FC64E40623 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quanlykho/Pods-quanlykho-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quanlykho/Pods-quanlykho-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -437,6 +631,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6858B7F0D6ACCD35A8D9B33D /* Pods-quanlykho-quanlykhoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -459,6 +654,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20B9CA5920F54C87C03EC32D /* Pods-quanlykho-quanlykhoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -478,6 +674,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C721DA74CB7650D41FC5BF /* Pods-quanlykho.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -500,6 +697,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27A3DA8B16970942BABE8DA4 /* Pods-quanlykho.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -520,6 +718,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1FB5ADCAD22E1D67F758288 /* Pods-quanlykho-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -547,6 +746,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E869FAD1A406A6667C4EB71 /* Pods-quanlykho-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -574,6 +774,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D032E0607E0DA70B0086759E /* Pods-quanlykho-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -600,6 +801,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9C2D1CFFF43D72DCA86165 /* Pods-quanlykho-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

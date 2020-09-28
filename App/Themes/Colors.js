@@ -4,5 +4,12 @@ export default {
   text: '#212529',
   primary: '#007bff',
   success: '#28a745',
-  error: '#dc3545'
+  red: '#F10101',
+  error: '#F10101',
+  gray: '#828282',
+  black: '#000',
+
+
+  placeholder: '#828282',
+  inputText: '#000'
 }
