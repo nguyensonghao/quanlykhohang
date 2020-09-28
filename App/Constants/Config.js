@@ -3,3 +3,7 @@ export const STATUS_CODE = {
 	SUCCESS: 1,
 	ERROR: 0
 }
+export const WEBSITE = {
+	NAME: 'chuyenhanghieu.com',
+	LINK: 'https://chuyenhanghieu.com'
+}

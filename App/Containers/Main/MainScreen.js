@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { SCREEN_NAME } from '../../Services/NavigationService';
+import { SCREEN } from '../../Services/NavigationService';
 import HomeScreen from '../Home/HomeScreen';
 import OrderScreen from '../Order/OrderScreen';
 import TransactionScreen from '../Transaction/TransactionScreen';
@@ -15,49 +15,39 @@ export default class MainScreen extends Component {
     return (
       <Tab.Navigator>
         <Tab.Screen 
-          name={SCREEN_NAME.HOME} 
+          name={SCREEN.HOME.TITLE} 
           component={HomeScreen} 
-          options={
-            {
-              title: 'Trang chủ'
-            }
-          }
+          options={{
+            title: 'Trang chủ'
+          }}
         />
         <Tab.Screen 
-          name={SCREEN_NAME.TRANSACTION} 
+          name={SCREEN.TRANSACTION.TITLE} 
           component={TransactionScreen} 
-          options={
-            {
-              title: 'Giao dịch'
-            }
-          }
+          options={{
+            title: 'Giao dịch'
+          }}
         />
         <Tab.Screen 
-          name={SCREEN_NAME.ORDER} 
+          name={SCREEN.ORDER.TITLE} 
           component={OrderScreen} 
-          options={
-            {
-              title: 'Tạo đơn'
-            }
-          }
+          options={{
+            title: 'Tạo đơn'
+          }}
         />
         <Tab.Screen 
-          name={SCREEN_NAME.PROFILE} 
+          name={SCREEN.PROFILE.TITLE} 
           component={ProfileScreen} 
-          options={
-            {
-              title: 'Cá nhân'
-            }
-          }
+          options={{
+            title: 'Cá nhân'
+          }}
         />
         <Tab.Screen 
-          name={SCREEN_NAME.NOTIFICATION} 
+          name={SCREEN.NOTIFICATION.TITLE} 
           component={NotificationScreen} 
-          options={
-            {
-              title: 'Thông báo'
-            }
-          }
+          options={{
+            title: 'Thông báo'
+          }}
         />
       </Tab.Navigator>
     )

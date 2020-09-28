@@ -8,6 +8,7 @@ import {
 import ValidationComponent from 'react-native-form-validator';
 
 import Style from './LoginScreenStyle';
+import { WEBSITE } from '../../Constants/Config';
 import MESSAGE from '../../Constants/Message';
 
 export default class LoginScreen extends ValidationComponent {
@@ -55,6 +56,8 @@ export default class LoginScreen extends ValidationComponent {
         <TouchableHighlight onPress={() => this.login()}>
           <Text>Đăng nhập</Text>
         </TouchableHighlight>
+
+        <Text>Dùng tài khoản {WEBSITE.NAME} để đăng nhập</Text>
       </View>
     )
   }

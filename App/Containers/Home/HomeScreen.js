@@ -21,20 +21,10 @@ class HomeScreen extends Component {
     }
   }
 
-  closeWebview() {
+  toggleWebview(status) {
     this.setState({
-      isShowWebview: false
+      isShowWebview: status
     })
-  }
-  
-  openWebview() {
-    this.setState({
-      isShowWebview: true
-    })
-  }
-
-  scanCode() {
-
   }
 
   redirect(page) {
@@ -46,7 +36,7 @@ class HomeScreen extends Component {
 
     return (
       <View style={{flex: 1}}>
-        <TouchableHighlight onPress={() => this.openWebview()}>
+        <TouchableHighlight onPress={() => this.toggleWebview(true)}>
           <Text>Click to open webview</Text>
         </TouchableHighlight>
 
@@ -59,7 +49,7 @@ class HomeScreen extends Component {
         <WebviewCustom 
           url={url} 
           isShow={isShowWebview} 
-          close={() => this.closeWebview()}
+          close={() => this.toggleWebview(false)}
         />
 
         <PaymentInformationModal 
