@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { 
   View, 
   Text,
@@ -8,6 +8,7 @@ import {
 import ValidationComponent from 'react-native-form-validator';
 
 import Style from './LoginScreenStyle';
+import MESSAGE from '../../Constants/Message';
 
 export default class LoginScreen extends ValidationComponent {
   constructor(props) {
@@ -19,18 +20,14 @@ export default class LoginScreen extends ValidationComponent {
   }
 
   login() {
-    if (!this.validate({
+    this.validate({
       username: {
         required: true
       },
-      password: {
-        minlength: 6, 
-        maxlength: 32, 
+      password: {        
         required: true
       }
-    })) {
-      return true;
-    }
+    })
   }
 
   render() {
@@ -44,9 +41,7 @@ export default class LoginScreen extends ValidationComponent {
           placeholder="Tài khoản"
           onChangeText={text => this.setState({username: text})}
         />
-        {this.isFieldInError('username') && this.getErrorsInField('username').map(errorMessage => 
-          <Text style={Style.messageValidate}>{errorMessage}</Text>
-        )}
+        {this.isFieldInError('username') ? <Text style={Style.messageValidate}>{MESSAGE.USERNAME_REQUIRED}</Text> : null}
 
         <TextInput 
           style={Style.input} 
@@ -54,14 +49,12 @@ export default class LoginScreen extends ValidationComponent {
           ecureTextEntry={true}
           placeholder="Mật khẩu"
           onChangeText={text => this.setState({password: text})}
-        />
-        {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => 
-          <Text style={Style.messageValidate}>{errorMessage}</Text>
-        )}
+        />        
+        {this.isFieldInError('password') ? <Text style={Style.messageValidate}>{MESSAGE.PASSWORD_REQUIRED}</Text> : null}
 
         <TouchableHighlight onPress={() => this.login()}>
           <Text>Đăng nhập</Text>
-        </TouchableHighlight>        
+        </TouchableHighlight>
       </View>
     )
   }

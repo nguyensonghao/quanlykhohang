@@ -1,11 +1,15 @@
 import { API_URL } from '../Constants/Config';
 import { httpGet } from './ApiService';
 
-const getList = () => {
-  const url = `${API_URL}/user/list`;
-  return httpGet(url);
+const login = () => {
+
+}
+
+const logout = () => {
+
 }
 
 export {
-  getList
+  login,
+  logout
 }
