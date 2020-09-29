@@ -6,8 +6,8 @@ import {
 } from 'react-native';
 import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
 
-import styles from "./styles";
-import { commom } from '../../Themes';
+import styles from "./ListTransactionScreenStyle";
+import { commom } from '../../../Themes';
 import TransactionTab from './TransactionTab/TransactionTab';
 
 const renderTabBar = props => (
@@ -30,7 +30,7 @@ const renderScene = SceneMap({
   pay: () => <TransactionTab/>
 })
 
-class TransactionScreen extends Component {
+class ListTransactionScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -74,4 +74,4 @@ class TransactionScreen extends Component {
   }
 }
 
-export default TransactionScreen;
+export default ListTransactionScreen;

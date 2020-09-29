@@ -14,7 +14,7 @@ export default class TransactionItem extends Component {
     const { transaction } = this.props;
 
     return (      
-      <TouchableOpacity style={Style.item}>
+      <TouchableOpacity style={Style.item} onPress={() => this.props.view()}>
         <Image style={Style.itemImg} source={require('../../Assets/Images/logo.png')}/>
         <View style={Style.itemCenter}>
           <Text style={Style.itemTitle}>{transaction.title}</Text>
@@ -31,5 +31,5 @@ export default class TransactionItem extends Component {
 
 TransactionItem.propTypes = {
   transaction: PropTypes.object,
-  showDetail: PropTypes.func
+  view: PropTypes.func
 }

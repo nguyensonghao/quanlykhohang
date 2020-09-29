@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 
-import TransactionItem from '../../../Components/TransactionItem/TransactionItem';
+import TransactionItem from '../../../../Components/TransactionItem/TransactionItem';
 
 class TransactionTab extends Component {
   constructor(props) {
@@ -44,11 +44,15 @@ class TransactionTab extends Component {
     })
   }
 
+  viewTransaction(transaction) {
+    this.props.navigation.navigate('LOGIN_SCREEN');
+  }
+
   render() {
     const { listTransaction } = this.state;    
 
     const renderItem = ({item}) => (
-      <TransactionItem transaction={item} />
+      <TransactionItem transaction={item} view={() => this.viewTransaction(item)} />
     )
   
     return (

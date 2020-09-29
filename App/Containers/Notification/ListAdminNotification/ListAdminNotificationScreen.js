@@ -5,9 +5,9 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-import NotificationItem from '../../Components/NotificationItem/NotificationItem';
+import NotificationItem from '../../../Components/NotificationItem/NotificationItem';
 
-class NotificationScreen extends Component {
+class ListAdminNotificationScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,7 +19,7 @@ class NotificationScreen extends Component {
     const mocks = [];
     for (let i = 0; i < 20; i++) {
       mocks.push({
-        id: i,
+        id: i.toString(),
         title: `Thong bao ${i}`
       })
     }
@@ -55,4 +55,4 @@ class NotificationScreen extends Component {
   }
 }
 
-export default NotificationScreen;
+export default ListAdminNotificationScreen;

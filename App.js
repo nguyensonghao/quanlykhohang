@@ -13,17 +13,17 @@ const App: () => React$Node = () => {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-      <Stack.Navigator>        
-        <Stack.Screen
-          name={SCREEN.MAIN.NAME}
-          component={MainScreen}
-          options={{ 
-            headerShown: false,
-            title: SCREEN.MAIN.TITLE
-          }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+        <Stack.Navigator>        
+          <Stack.Screen
+            name={SCREEN.MAIN.NAME}
+            component={MainScreen}
+            options={{ 
+              headerShown: false,
+              title: SCREEN.MAIN.TITLE
+            }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
     </SafeAreaProvider>
 
   )

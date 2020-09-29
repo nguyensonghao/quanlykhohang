@@ -4,14 +4,12 @@ import {
   Text
 } from 'react-native';
 
-class OrderScreen extends Component {
+export default class DetailOrderScreen extends Component {
   render() {
     return (
       <View>
-        <Text>OrderScreen</Text>
+        <Text>Detail Order</Text>
       </View>
     )
   }
 }
-
-export default OrderScreen;

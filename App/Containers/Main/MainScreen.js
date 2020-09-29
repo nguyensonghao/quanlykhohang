@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { SCREEN } from '../../Services/NavigationService';
-import HomeScreen from '../Home/HomeScreen';
-import OrderScreen from '../Order/OrderScreen';
-import TransactionScreen from '../Transaction/TransactionScreen';
-import ProfileScreen from '../Profile/ProfileScreen';
-import NotificationScreen from '../Notification/NotificationScreen';
+import HomeStackScreen from '../Home/HomeStackScreen';
+import OrderStackScreen from '../Order/OrderStackScreen';
+import TransactionStackScreen from '../Transaction/TransactionStackScreen';
+import ProfileStackScreen from '../Profile/ProfileStackScreen';
+import NotificationStackScreen from '../Notification/NotificationStackScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -16,40 +16,35 @@ export default class MainScreen extends Component {
       <Tab.Navigator>
         <Tab.Screen 
           name={SCREEN.HOME.TITLE} 
-          component={HomeScreen} 
-          navigationOptions={{
-            header: {
-              visible: false
-            }
-          }}
+          component={HomeStackScreen}           
           options={{
             title: 'Trang chủ'
           }}
         />
         <Tab.Screen 
           name={SCREEN.TRANSACTION.TITLE} 
-          component={TransactionScreen} 
+          component={TransactionStackScreen} 
           options={{
             title: 'Giao dịch'
           }}
         />
         <Tab.Screen 
           name={SCREEN.ORDER.TITLE} 
-          component={OrderScreen} 
+          component={OrderStackScreen} 
           options={{
             title: 'Tạo đơn'
           }}
         />
         <Tab.Screen 
           name={SCREEN.PROFILE.TITLE} 
-          component={ProfileScreen} 
+          component={ProfileStackScreen} 
           options={{
             title: 'Cá nhân'
           }}
         />
         <Tab.Screen 
-          name={SCREEN.NOTIFICATION.TITLE} 
-          component={NotificationScreen} 
+          name={SCREEN.LIST_NOTIFICATION.TITLE} 
+          component={NotificationStackScreen} 
           options={{
             title: 'Thông báo'
           }}

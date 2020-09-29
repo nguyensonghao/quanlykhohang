@@ -5,9 +5,11 @@ import {
   TouchableHighlight
 } from 'react-native';
 
+import { SCREEN } from '../../../Services/NavigationService';
+
 class ProfileScreen extends Component {
   changePassword() {
-    this.props.navigation.navigate('ChangePasswordScreen');
+    this.props.navigation.navigate(SCREEN.CHANGE_PASSWORD.NAME);
   }
 
   render() {
