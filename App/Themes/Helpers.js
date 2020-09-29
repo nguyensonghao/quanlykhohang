@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native'
+import { Colors } from './index';
 
 export default StyleSheet.create({  
   safeArea: {
@@ -21,5 +22,12 @@ export default StyleSheet.create({
     padding: 0,
     paddingVertical: 0,
     paddingHorizontal: 0
+  },
+
+  green: {
+    color: Colors.green
+  },
+  blue: {
+    color: Colors.blue
   }
 })

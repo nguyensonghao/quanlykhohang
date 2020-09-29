@@ -9,6 +9,7 @@ export default StyleSheet.create({
   },
   labelStl: {
     color: Colors.black,
+    fontFamily: 'Muli'
   },
   indicatorStl: {
     backgroundColor: Colors.black,
