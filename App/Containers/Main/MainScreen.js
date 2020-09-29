@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { SCREEN } from '../../Services/NavigationService';
-import HomeStackScreen from '../Home/HomeStackScreen';
-import OrderStackScreen from '../Order/OrderStackScreen';
-import TransactionStackScreen from '../Transaction/TransactionStackScreen';
-import ProfileStackScreen from '../Profile/ProfileStackScreen';
-import NotificationStackScreen from '../Notification/NotificationStackScreen';
+import { SCREEN } from '~/Services/NavigationService';
+import HomeStackScreen from '~/Containers/Home/HomeStackScreen';
+import OrderStackScreen from '~/Containers/Order/OrderStackScreen';
+import TransactionStackScreen from '~/Containers/Transaction/TransactionStackScreen';
+import ProfileStackScreen from '~/Containers/Profile/ProfileStackScreen';
+import NotificationStackScreen from '~/Containers/Notification/NotificationStackScreen';
 
 const Tab = createBottomTabNavigator();
 

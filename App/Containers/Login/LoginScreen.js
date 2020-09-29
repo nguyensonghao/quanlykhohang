@@ -7,12 +7,13 @@ import {
 } from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { WEBSITE } from '../../Constants/Config';
-import MESSAGE from '../../Constants/Message';
-import { Colors, commom } from "../../Themes";
-import styles from "./styles";
-import ButtonDefault from "../../Components/Button";
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+
+import { WEBSITE } from '~/Constants/Config';
+import MESSAGE from '~/Constants/Message';
+import { Colors, commom } from '~/Themes';
+import styles from './styles';
+import ButtonDefault from '~/Components/Button';
 
 export default class LoginScreen extends ValidationComponent {
   constructor(props) {

@@ -7,8 +7,8 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-import Style from './SliderComponentStyle';
-import ProductItem from '../../../Components/ProductItem/ProductItem';
+import styles from './SliderComponentStyle';
+import ProductItem from '~/Components/ProductItem/ProductItem';
 
 export default class Slider extends Component {
   renderSlider() {
@@ -22,15 +22,15 @@ export default class Slider extends Component {
     const { title } = this.props;
 
     return (
-      <View style={Style.container}>
-        <View style={Style.header}>
+      <View style={styles.container}>
+        <View style={styles.header}>
           <Text>{title}</Text>
           <TouchableHighlight onPress={() => this.props.seeMore()}>
             <Text>Xem thêm</Text>
           </TouchableHighlight>
         </View> 
 
-        <ScrollView style={Style.slider} horizontal={true}>
+        <ScrollView style={styles.slider} horizontal={true}>
           {this.renderSlider()}
         </ScrollView>        
       </View>

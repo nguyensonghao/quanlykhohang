@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { SCREEN } from '../../Services/NavigationService';
+import { SCREEN } from '~/Services/NavigationService';
 import ListNotificationScreen from './ListNotification/ListNotificationScreen';
 import ListAdminNotificationScreen from './ListAdminNotification/ListAdminNotificationScreen';
 import DetailNotificationScreen from './DetailNotification/DetailNotificationScreen';

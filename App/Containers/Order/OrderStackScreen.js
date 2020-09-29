@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { SCREEN } from '../../Services/NavigationService';
+import { SCREEN } from '~/Services/NavigationService';
 import CreateOrderScreen from './CreateOrder/CreateOrderScreen';
 import EditOrderScreen from './EditOrder/EditOrderScreen';
 import DetailOrderScreen from './DetailOrder/DetailOrderScreen';

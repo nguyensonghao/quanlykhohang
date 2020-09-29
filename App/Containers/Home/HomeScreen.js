@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import { 
-  View,
-} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { commom } from '~/Themes';
 import Menu from './Menu/MenuComponent';
 import Slider from './Slider/SliderComponent';
-import WebviewCustom from '../../Components/WebviewCustom/WebviewCustomComponent';
-import CodeInformationModal from '../../Components/CodeInformationModal/CodeInformationModal';
-import PaymentInformationModal from '../../Components/PaymentInfomationModal/PaymentInformationModal';
-import {commom} from "../../Themes"
+import WebviewCustom from '~/Components/WebviewCustom/WebviewCustomComponent';
+import CodeInformationModal from '~/Components/CodeInformationModal/CodeInformationModal';
+import PaymentInformationModal from '~/Components/PaymentInfomationModal/PaymentInformationModal';
+
 class HomeScreen extends Component {
   constructor(props) {
     super(props);

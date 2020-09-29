@@ -22,6 +22,15 @@ const App: () => React$Node = () => {
               title: SCREEN.MAIN.TITLE
             }}
           />
+
+          <Stack.Screen
+            name={SCREEN.LOGIN.NAME}
+            component={LoginScreen}
+            options={{ 
+              headerShown: false,
+              title: SCREEN.LOGIN.TITLE
+            }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
