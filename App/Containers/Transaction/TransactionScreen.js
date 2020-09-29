@@ -5,6 +5,7 @@ import {
   Dimensions,
 } from 'react-native';
 import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import styles from "./styles";
 import { commom } from '../../Themes';
@@ -17,7 +18,7 @@ const renderTabBar = props => (
     style={styles.tabBarStl}
     labelStyle={styles.labelStl}
     renderLabel={({ route, focused, color }) => (
-      <Text>
+      <Text style={styles.labelStl}>
         {route.title}
       </Text>
     )}
@@ -59,17 +60,20 @@ class TransactionScreen extends Component {
     }
 
     return (
-      <View style={[commom.container, commom.p0]}>
-        <TabView          
-          renderTabBar={renderTabBar}
-          style={{flex: 1}}
-          navigationState={{ index, routes }}
-          renderScene={renderScene}
-          onIndexChange={index => this.setState({index})}
-          initialLayout={initialLayout}
-          getLabelText={({ route }) => route.title}
-        />
-      </View>
+      <SafeAreaView style={commom.safeArea}>
+        <View style={[commom.container, commom.p0]}>
+          <TabView          
+            renderTabBar={renderTabBar}
+            style={commom.flex_1}
+            navigationState={{ index, routes }}
+            renderScene={renderScene}
+            onIndexChange={index => this.setState({index})}
+            initialLayout={initialLayout}
+            getLabelText={({ route }) => route.title}
+          />
+        </View>
+      </SafeAreaView>
+     
     )
   }
 }

@@ -4,7 +4,8 @@ import {
   FlatList,
   TouchableHighlight
 } from 'react-native';
-
+import { SafeAreaView } from 'react-native-safe-area-context';
+import {commom} from '../../Themes'
 import NotificationItem from '../../Components/NotificationItem/NotificationItem';
 
 class NotificationScreen extends Component {
@@ -37,7 +38,9 @@ class NotificationScreen extends Component {
     const { listNoti } = this.state;
 
     return (
-      <View>
+      <SafeAreaView style={commom.safeArea}>
+        <View style={[commom.container, commom.p0]}>
+
         <FlatList          
           data={listNoti}
           renderItem={({ item, index, separators }) => (
@@ -50,7 +53,9 @@ class NotificationScreen extends Component {
             </TouchableHighlight>
           )}
         />
-      </View>
+        </View>
+
+      </SafeAreaView>
     )
   }
 }

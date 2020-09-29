@@ -7,6 +7,8 @@ import {
 import PropTypes from 'prop-types';
 
 import TransactionItem from '../../../Components/TransactionItem/TransactionItem';
+import styles from './TransactionTabStyle';
+import { commom } from '../../../Themes';
 
 class TransactionTab extends Component {
   constructor(props) {
@@ -52,7 +54,7 @@ class TransactionTab extends Component {
     )
   
     return (
-      <View>
+      <View style={commom.flex_1}>
         <HeaderList/>
         <FlatList
           data={listTransaction}
@@ -72,8 +74,15 @@ TransactionTab.propTypes = {
 
 const HeaderList = (props) => {
   return (
-    <View>
-      <Text>Tổng tiền nạp</Text>
+    <View style={styles.container}>
+      <View style={styles.colLeft}>
+        <Text style={styles.textTitle}>Tổng tiền đã nạp</Text>
+        <Text style={[styles.number, commom.blue]}>5000000000đ</Text>
+      </View>
+      <View style={styles.colRight}>
+        <Text style={styles.textTitle}>Số dư</Text>
+        <Text style={[styles.number, commom.green]}>20.000.000.000đ</Text>
+      </View>
     </View>
   )
 }

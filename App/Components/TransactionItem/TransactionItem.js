@@ -8,11 +8,13 @@ import {
 import PropTypes from 'prop-types';
 
 import Style from './TransactionItemStyle';
+import { Colors } from '../../Themes';
 
 export default class TransactionItem extends Component {
+
   render() {
     const { transaction } = this.props;
-
+    const color = Colors.blue
     return (      
       <TouchableOpacity style={Style.item}>
         <Image style={Style.itemImg} source={require('../../Assets/Images/logo.png')}/>
@@ -22,7 +24,7 @@ export default class TransactionItem extends Component {
         </View>
         <View>
           <Text style={Style.itemCreatedAt}>{transaction.createdAt}</Text>
-          <Text style={Style.itemMoney}>{transaction.money}</Text>
+          <Text style={[Style.itemMoney, {color: color}]}>{transaction.money}</Text>
         </View>
       </TouchableOpacity>
     )

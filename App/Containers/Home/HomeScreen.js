@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { 
   View,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import Menu from './Menu/MenuComponent';
 import Slider from './Slider/SliderComponent';
 import WebviewCustom from '../../Components/WebviewCustom/WebviewCustomComponent';
 import CodeInformationModal from '../../Components/CodeInformationModal/CodeInformationModal';
 import PaymentInformationModal from '../../Components/PaymentInfomationModal/PaymentInformationModal';
-
+import {commom} from "../../Themes"
 class HomeScreen extends Component {
   constructor(props) {
     super(props);
@@ -51,7 +52,7 @@ class HomeScreen extends Component {
     const { isShowWebview, url, isShowPayment, isShowCode, listProduct } = this.state;
 
     return (
-      <View style={{flex: 1}}>
+      <SafeAreaView style={commom.safeArea}>
         <Menu
           scanCode={() => this.setState({isShowCode: true})}
           payment={() => this.setState({isShowPayment: true})}
@@ -78,7 +79,7 @@ class HomeScreen extends Component {
         <CodeInformationModal 
           isShow={isShowCode}
         />
-      </View>      
+      </SafeAreaView>      
     )
   }
 }

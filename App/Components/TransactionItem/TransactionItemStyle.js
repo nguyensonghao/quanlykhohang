@@ -20,6 +20,7 @@ export default StyleSheet.create({
     width: 32,
     height: 32
   },
+  
   itemTitle: {
     fontFamily: 'Muli-Semibold',
     fontSize: 13,
@@ -35,7 +36,7 @@ export default StyleSheet.create({
     lineHeight: 20
   },
   itemCreatedAt: {
-    fontFamily: 'Muli',
+    fontFamily: 'Muli-Regular',
     fontSize: 11,
     color: Colors.lightGray,
     letterSpacing: -0.24,
