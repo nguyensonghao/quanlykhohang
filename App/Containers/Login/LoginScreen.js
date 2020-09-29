@@ -7,34 +7,66 @@ import {
 } from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Toast } from 'react-native-easy-toast';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
-import { WEBSITE } from '~/Constants/Config';
+import { 
+  WEBSITE, 
+  STATUS_CODE 
+} from '~/Constants/Config';
 import MESSAGE from '~/Constants/Message';
-import { Colors, commom } from '~/Themes';
 import styles from './styles';
+import { Colors, commom } from '~/Themes';
 import ButtonDefault from '~/Components/Button';
+import { SCREEN } from '~/Services/NavigationService';
+import { saveToken } from '~/Services/AuthService';
+import { login as authLogin } from '~/Services/UserService';
 
 export default class LoginScreen extends ValidationComponent {
   constructor(props) {
     super(props);
     this.state = {
       username: '',
-      password: ''
+      password: '',
+      isCallingApi: false
     }    
   }
-  test = () => {
-    alert('werwer');
-  }
-  login() {
-    this.validate({
+  
+  async login() {
+    if (!this.validate({
       username: {
         required: true
       },
       password: {        
         required: true
       }
+    })) {
+      return;
+    }
+
+    const { isCallingApi, username, password } = this.state;
+    if (isCallingApi) {
+      return;
+    }
+
+    this.setState({
+      isCallingApi: true
     })
+
+    const res = await authLogin({
+      username: username,
+      password: password
+    })
+
+    if (res.status === STATUS_CODE.SUCCESS) {
+      await saveToken(res.data.token); 
+      this.props.navigation.navigate(SCREEN.MAIN.NAME);
+    } else {
+      // this.refs.toast.show('hello world!', 1000);
+      this.setState({
+        isCallingApi: false
+      })      
+    }
   }
 
   render() {
@@ -79,7 +111,8 @@ export default class LoginScreen extends ValidationComponent {
             để đăng nhập
             </Text>
         </View>
-        </KeyboardAwareScrollView>
+        {/* <Toast ref="toast"/> */}
+        </KeyboardAwareScrollView>        
       </SafeAreaView>
    
     )

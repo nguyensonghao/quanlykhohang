@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { SCREEN } from './App/Services/NavigationService';
 import LoginScreen from './App/Containers/Login/LoginScreen';
 import MainScreen from './App/Containers/Main/MainScreen';
+import SplashScreen from './App/Containers/Splash/SplashScreen';
 import {SafeAreaProvider} from "react-native-safe-area-context"
 const Stack = createStackNavigator();
 
@@ -13,7 +14,15 @@ const App: () => React$Node = () => {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator>        
+        <Stack.Navigator>
+          <Stack.Screen
+            name={SCREEN.SPLASH.NAME}
+            component={SplashScreen}
+            options={{ 
+              headerShown: false
+            }}
+          />
+
           <Stack.Screen
             name={SCREEN.MAIN.NAME}
             component={MainScreen}
@@ -30,7 +39,7 @@ const App: () => React$Node = () => {
               headerShown: false,
               title: SCREEN.LOGIN.TITLE
             }}
-          />
+          />          
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
