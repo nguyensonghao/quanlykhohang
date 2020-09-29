@@ -18,6 +18,18 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
 
+  pr20: {
+    paddingRight: 20
+  },
+  mt20: {
+    marginTop: 20
+  },
+  mt35: {
+    marginTop: 35
+  },
+  pd35: {
+    paddingTop: 35
+  },
   p0: {
     padding: 0,
     paddingVertical: 0,

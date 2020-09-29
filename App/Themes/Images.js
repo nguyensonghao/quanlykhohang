@@ -1,3 +1,7 @@
 export default {
-  // logo: require('App/Assets/Images/logo.png'),
+  logo: require('~/Assets/Images/logo.png'),
+
+  searchIcon: require('~/Assets/icons/search.png'),
+  cameraIcon: require('~/Assets/icons/camera.png'),
+
 }

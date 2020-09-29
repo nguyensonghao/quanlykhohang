@@ -11,7 +11,14 @@ const Stack = createStackNavigator();
 export default class OrderStackScreen extends Component {
   render() {
     return (
-      <Stack.Navigator>        
+      <Stack.Navigator>   
+         <Stack.Screen
+          name={SCREEN.LIST_ORDER.NAME}
+          component={ListOrderScreen}
+          options={{ 
+            title: SCREEN.LIST_ORDER.TITLE
+          }}
+        />     
         <Stack.Screen
           name={SCREEN.CREATE_ORDER.NAME}
           component={CreateOrderScreen}
@@ -33,13 +40,7 @@ export default class OrderStackScreen extends Component {
             title: SCREEN.DETAIL_ORDER.TITLE
           }}
         />
-         <Stack.Screen
-          name={SCREEN.LIST_ORDER.NAME}
-          component={ListOrderScreen}
-          options={{ 
-            title: SCREEN.LIST_ORDER.TITLE
-          }}
-        />
+        
       </Stack.Navigator>
     )
   }

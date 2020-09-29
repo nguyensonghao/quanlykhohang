@@ -69,7 +69,7 @@ class ListTransactionScreen extends Component {
     }
 
     return (
-      <SafeAreaView style={commom.safeArea}>
+      // <SafeAreaView style={commom.safeArea}>
         <View style={[commom.container, commom.p0]}>
           <TabView          
             renderTabBar={renderTabBar}
@@ -81,7 +81,7 @@ class ListTransactionScreen extends Component {
             getLabelText={({ route }) => route.title}
           />
         </View>
-      </SafeAreaView>
+      // </SafeAreaView>
     )
   }
 }

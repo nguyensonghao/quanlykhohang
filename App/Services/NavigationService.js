@@ -57,6 +57,6 @@ export const SCREEN = {
   },
   LIST_ORDER: {
     NAME: 'LIST_ORDER_SCREEN',
-    TITLE: 'Danh sách đơn hàng'
+    TITLE: 'Đơn hàng'
   }
 }

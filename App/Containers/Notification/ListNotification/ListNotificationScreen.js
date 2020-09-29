@@ -4,7 +4,6 @@ import {
   FlatList,
   TouchableHighlight
 } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { SCREEN } from '~/Services/NavigationService';
 import { commom } from '~/Themes';
@@ -42,7 +41,7 @@ class ListNotificationScreen extends Component {
     const { listNoti } = this.state;
 
     return (
-      <SafeAreaView style={commom.safeArea}>
+      // <SafeAreaView style={commom.safeArea}>
         <View style={[commom.container, commom.p0]}>
 
         <FlatList          
@@ -59,7 +58,7 @@ class ListNotificationScreen extends Component {
         />
         </View>
 
-      </SafeAreaView>
+      // </SafeAreaView>
     )
   }
 }

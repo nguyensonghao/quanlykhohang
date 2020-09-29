@@ -16,5 +16,16 @@ export default {
   lightGray: '#919191',
 
   placeholder: '#828282',
-  inputText: '#000'
+  inputText: '#111111',
+  inputBorder: '#828282',
+
+  // status Order
+  pending: '#01CBA7',
+  reported: '#F1CB01',
+  doiSoat: '#1401F1',
+  huyDon: '#111111',
+  hangLoi: '#F10101',
+  khoTQ: '#f10183',
+  khoVN: '#b301f1',
+  thanhToan: '#04C33A'
 }

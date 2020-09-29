@@ -6,7 +6,7 @@ import styles from './styles';
 class ButtonDefault extends PureComponent {
 
   render() {
-    const {onPress, containerStl, text, textStl, ...prop} = this.props
+    const {onPress, containerStl, text, textStl, ...props} = this.props
     return (
       <TouchableOpacity style={[styles.container, containerStl]} onPress={onPress}>
          <Text style={[styles.text, textStl]}>{text}</Text>
