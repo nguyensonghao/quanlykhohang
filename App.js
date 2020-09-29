@@ -14,18 +14,12 @@ const App: () => React$Node = () => {
     <SafeAreaProvider>
       <NavigationContainer>
       <Stack.Navigator>        
-        {/* <Stack.Screen
+        <Stack.Screen
           name={SCREEN.MAIN.NAME}
           component={MainScreen}
           options={{ 
-            title: SCREEN.MAIN.TITLE,
-          }}
-        /> */}
-        <Stack.Screen
-          name={SCREEN.LOGIN.NAME}
-          component={LoginScreen}
-          options={{ 
-            headerShown: false
+            headerShown: false,
+            title: SCREEN.MAIN.TITLE
           }}
         />
       </Stack.Navigator>

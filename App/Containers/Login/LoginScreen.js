@@ -59,7 +59,6 @@ export default class LoginScreen extends ValidationComponent {
           <View style={styles.inputWrap}>
             <TextInput 
               placeholderTextColor={Colors.placeholder}
-              secureTextEntry="true"
               style={styles.input} 
               value={password}
               ecureTextEntry={true}

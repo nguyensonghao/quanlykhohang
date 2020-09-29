@@ -17,8 +17,6 @@ export default StyleSheet.create({
     height: 184,
 
   },
-
-
   inputWrap: {
     width: '100%',
     marginBottom: 15
@@ -37,9 +35,9 @@ export default StyleSheet.create({
     color: 'red'
   },
   errorText: {
-    color: Colors.error
+    color: Colors.error,
+    marginTop: 6
   },
-
   textSmall: {
     fontSize: 10,
     color: Colors.gray,
