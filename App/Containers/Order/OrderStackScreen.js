@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import { SCREEN } from '~/Services/NavigationService';
-import CreateOrderScreen from './CreateOrder/CreateOrderScreen';
-import EditOrderScreen from './EditOrder/EditOrderScreen';
-import DetailOrderScreen from './DetailOrder/DetailOrderScreen';
+import CreateOrderScreen from '~/Containers/Order/CreateOrder/CreateOrderScreen';
+import EditOrderScreen from '~/Containers/Order/EditOrder/EditOrderScreen';
+import DetailOrderScreen from '~/Containers/Order/DetailOrder/DetailOrderScreen';
+import ListOrderScreen from '~/Containers/Order/ListOrder/ListOrderScreen';
 const Stack = createStackNavigator();
 
 export default class OrderStackScreen extends Component {
@@ -30,6 +31,13 @@ export default class OrderStackScreen extends Component {
           component={DetailOrderScreen}
           options={{ 
             title: SCREEN.DETAIL_ORDER.TITLE
+          }}
+        />
+         <Stack.Screen
+          name={SCREEN.LIST_ORDER.NAME}
+          component={ListOrderScreen}
+          options={{ 
+            title: SCREEN.LIST_ORDER.TITLE
           }}
         />
       </Stack.Navigator>

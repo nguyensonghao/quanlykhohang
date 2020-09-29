@@ -13,7 +13,7 @@ export default class TransactionStackScreen extends Component {
           name={SCREEN.LIST_TRANSACTION.NAME}
           component={ListTransactionScreen}
           options={{ 
-            title: SCREEN.LIST_TRANSACTION.TITLE
+            title: SCREEN.LIST_TRANSACTION.TITLE            
           }}
         />
       </Stack.Navigator>

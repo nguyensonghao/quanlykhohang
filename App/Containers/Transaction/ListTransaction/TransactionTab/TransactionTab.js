@@ -38,7 +38,7 @@ class TransactionTab extends Component {
   }
 
   viewTransaction(transaction) {
-    this.props.navigation.navigate('LOGIN_SCREEN');
+    
   }
 
   refreshListTransaction() {
@@ -72,10 +72,6 @@ class TransactionTab extends Component {
 }
 
 export default TransactionTab;
-
-TransactionTab.propTypes = {
-  title: PropTypes.string
-}
 
 const HeaderList = (props) => {
   return (

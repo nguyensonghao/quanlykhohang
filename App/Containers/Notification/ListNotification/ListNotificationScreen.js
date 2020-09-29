@@ -6,8 +6,9 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { commom } from '../../../Themes'
-import NotificationItem from '../../../Components/NotificationItem/NotificationItem';
+import { SCREEN } from '~/Services/NavigationService';
+import { commom } from '~/Themes';
+import NotificationItem from '~/Components/NotificationItem/NotificationItem';
 
 class ListNotificationScreen extends Component {
   constructor(props) {
@@ -32,7 +33,9 @@ class ListNotificationScreen extends Component {
   }
 
   viewNotification(notification) {
-    alert(notification.id);
+    this.props.navigation.navigate(SCREEN.DETAIL_NOTIFICATION.NAME, {
+      id: notification.id
+    })
   }
   
   render() {

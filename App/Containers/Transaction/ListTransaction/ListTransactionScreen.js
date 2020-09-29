@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   View,
   Text,
+  Button,
   Dimensions,
 } from 'react-native';
 import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
@@ -31,7 +32,7 @@ const renderScene = SceneMap({
   pay: () => <TransactionTab/>
 })
 
-class ListTransactionScreen extends Component {
+class ListTransactionScreen extends Component {  
   constructor(props) {
     super(props);
     this.state = {
@@ -51,6 +52,14 @@ class ListTransactionScreen extends Component {
         }
       ]
     }
+  }
+
+  componentDidMount() {
+    this.props.navigation.setOptions({
+      headerLeft: () =>  (
+        <Button title="Filter" onPress={() => alert('Show Filter')} />
+      )
+    })
   }
 
   render() {
@@ -73,7 +82,6 @@ class ListTransactionScreen extends Component {
           />
         </View>
       </SafeAreaView>
-     
     )
   }
 }
