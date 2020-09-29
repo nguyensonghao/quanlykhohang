@@ -3,12 +3,12 @@ import { View, Text, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
 
-class InputDefault extends PureComponent {
+class ButtonDefault extends PureComponent {
 
   render() {
-    const {containerStl, text, textStl, ...prop} = this.props
+    const {onPress, containerStl, text, textStl, ...prop} = this.props
     return (
-      <TouchableOpacity style={[styles.container, containerStl]}>
+      <TouchableOpacity style={[styles.container, containerStl]} onPress={onPress}>
          <Text style={[styles.text, textStl]}>{text}</Text>
          {this.props.children}
       </TouchableOpacity>
@@ -16,4 +16,4 @@ class InputDefault extends PureComponent {
   }
 }
 
-export default InputDefault;
+export default ButtonDefault;

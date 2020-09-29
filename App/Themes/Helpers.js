@@ -4,6 +4,9 @@ export default StyleSheet.create({
   safeArea: {
     flex: 1, 
   },
+  flex_1: {
+    flex: 1, 
+  },
   container: {
     flex: 1,
     paddingHorizontal: 15,

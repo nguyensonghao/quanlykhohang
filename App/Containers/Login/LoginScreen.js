@@ -11,7 +11,7 @@ import { WEBSITE } from '../../Constants/Config';
 import MESSAGE from '../../Constants/Message';
 import { Colors, commom } from "../../Themes";
 import styles from "./styles";
-import InputDefault from "../../Components/Button";
+import ButtonDefault from "../../Components/Button";
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 export default class LoginScreen extends ValidationComponent {
@@ -22,7 +22,9 @@ export default class LoginScreen extends ValidationComponent {
       password: ''
     }    
   }
-
+  test = () => {
+    alert('werwer');
+  }
   login() {
     this.validate({
       username: {
@@ -39,7 +41,7 @@ export default class LoginScreen extends ValidationComponent {
 
     return (
       <SafeAreaView style={commom.safeArea}>
-        <KeyboardAwareScrollView>
+        <KeyboardAwareScrollView contentContainerStyle={commom.flex_1}>
           <View style={[commom.container]}>
           <View style={styles.logoWrap}>
             <Image style={styles.logo} source={require('../../Assets/Images/logo.png')}/>
@@ -66,9 +68,9 @@ export default class LoginScreen extends ValidationComponent {
             />        
             {this.isFieldInError('password') ? <Text style={styles.errorText}>{MESSAGE.PASSWORD_REQUIRED}</Text> : null}
           </View>
-          <InputDefault 
+          <ButtonDefault 
             text="Đăng nhập" 
-            onPress={() => this.login()}
+            onPress={() => {this.login()}}
             containerStl={styles.btnLogin}
           />
           <Text style={styles.textSmall}>

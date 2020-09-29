@@ -6,10 +6,10 @@ import {
   Text, Image, TouchableOpacity
 } from 'react-native';
 import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
+
 import styles from "./styles";
 import Example from '../../Components/Example/ExampleComponent';
 import { commom } from '../../Themes';
-
 const DATA = [
   {
     id: '1',
