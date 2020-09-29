@@ -15,35 +15,35 @@ export default class MainScreen extends Component {
     return (
       <Tab.Navigator>
         <Tab.Screen 
-          name={SCREEN.HOME.TITLE} 
+          name={SCREEN.HOME.NAME} 
           component={HomeStackScreen}           
           options={{
             title: 'Trang chủ'
           }}
         />
         <Tab.Screen 
-          name={SCREEN.TRANSACTION.TITLE} 
+          name={SCREEN.TRANSACTION.NAME} 
           component={TransactionStackScreen} 
           options={{
             title: 'Giao dịch'
           }}
         />
         <Tab.Screen 
-          name={SCREEN.ORDER.TITLE} 
+          name={SCREEN.ORDER.NAME} 
           component={OrderStackScreen} 
           options={{
             title: 'Tạo đơn'
           }}
         />
         <Tab.Screen 
-          name={SCREEN.PROFILE.TITLE} 
+          name={SCREEN.PROFILE.NAME} 
           component={ProfileStackScreen} 
           options={{
             title: 'Cá nhân'
           }}
         />
         <Tab.Screen 
-          name={SCREEN.LIST_NOTIFICATION.TITLE} 
+          name={SCREEN.LIST_NOTIFICATION.NAME} 
           component={NotificationStackScreen} 
           options={{
             title: 'Thông báo'

@@ -40,11 +40,7 @@ class HomeScreen extends Component {
     this.setState({
       isShowWebview: true
     })
-  }
-
-  redirect(page) {
-    this.props.navigation.navigate(page);
-  }
+  }  
 
   render() {
     const { isShowWebview, url, isShowPayment, isShowCode, listProduct } = this.state;
@@ -54,7 +50,7 @@ class HomeScreen extends Component {
         <Menu
           scanCode={() => this.setState({isShowCode: true})}
           payment={() => this.setState({isShowPayment: true})}
-          redirectScreen={(page) => this.redirect(page)}
+          redirectScreen={(page) => this.props.redirect(page)}
         />
         
         <Slider

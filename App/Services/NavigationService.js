@@ -44,19 +44,19 @@ export const SCREEN = {
     TITLE: 'Giao dịch'
   },
   CREATE_ORDER: {
-    NAME: 'CREATE_ORDER',
+    NAME: 'CREATE_ORDER_SCREEN',
     TITLE: 'Tạo đơn hàng'
   },
   EDIT_ORDER: {
-    NAME: 'EDIT_ORDER',
+    NAME: 'EDIT_ORDER_SCREEN',
     TITLE: 'Chỉnh sửa đơn hàng'
   },
   DETAIL_ORDER: {
-    NAME: 'DETAIL_ORDER',
+    NAME: 'DETAIL_ORDER_SCREEN',
     TITLE: 'Chi tiết đơn hàng'
   },
   LIST_ORDER: {
-    NAME: 'LIST_ORDER',
+    NAME: 'LIST_ORDER_SCREEN',
     TITLE: 'Danh sách đơn hàng'
   }
 }
