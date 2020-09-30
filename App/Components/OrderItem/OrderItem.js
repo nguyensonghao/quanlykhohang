@@ -44,29 +44,29 @@ export default class OrderItem extends Component {
         {
           this.state.isAdmin ? 
             <View style={styles.boxScan}>
-          <View style={styles.colScanLeft}>
-            <TouchableOpacity style={styles.btnScan}>
-              <Text style={styles.textScan}>Mã vận đơn TQ</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.btnScan}>
-              <Text style={styles.textScan}>Mã vận đơn VN</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.colScanCenter}>
-            <View style={styles.wrapCamera}>
-              <Text style={styles.textScan}>Chụp ảnh bao hàng</Text>
-              <Image style={styles.iconCamera} source={Images.cameraIcon}/>
+              <View style={styles.colScanLeft}>
+                <TouchableOpacity style={styles.btnScan}>
+                  <Text style={styles.textScan}>Mã vận đơn TQ</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnScan}>
+                  <Text style={styles.textScan}>Mã vận đơn VN</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.colScanCenter}>
+                <TouchableOpacity style={styles.wrapCamera}>
+                  <Text style={styles.textScan}>Chụp ảnh bao hàng</Text>
+                  <Image style={styles.iconCamera} source={Images.cameraIcon}/>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.colScanRight}>
+                <TouchableOpacity style={styles.btnScan}>
+                  <Text style={styles.textScan}>Mã vận đơn</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnScan}>
+                  <Text style={styles.textScan}>Mã bao hàng</Text>
+                </TouchableOpacity>
+              </View>
             </View>
-          </View>
-          <View style={styles.colScanRight}>
-            <TouchableOpacity style={styles.btnScan}>
-              <Text style={styles.textScan}>Mã vận đơn</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.btnScan}>
-              <Text style={styles.textScan}>Mã bao hàng</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
           : null
         }
      

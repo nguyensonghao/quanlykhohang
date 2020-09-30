@@ -21,11 +21,17 @@ export default {
 
   // status Order
   pending: '#01CBA7',
-  reported: '#F1CB01',
-  doiSoat: '#1401F1',
-  huyDon: '#111111',
-  hangLoi: '#F10101',
+  daBao: '#F1CB01',
   khoTQ: '#f10183',
   khoVN: '#b301f1',
-  thanhToan: '#04C33A'
+  doiSoat: '#1401F1',
+  dangGoi: '#DE01F1',
+  daGiao: '#F17401',
+  daNhan: '#007AFF',
+  hoanThanh: '#04C33A',
+  hangLoi: '#F10101',
+  huyDon: '#111111',
+  thanhToan: '#04C33A',
+
+
 }

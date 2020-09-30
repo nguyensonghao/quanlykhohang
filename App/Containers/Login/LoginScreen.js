@@ -16,7 +16,7 @@ import {
 } from '~/Constants/Config';
 import MESSAGE from '~/Constants/Message';
 import styles from './styles';
-import { Colors, commom } from '~/Themes';
+import { Colors, commom, Images } from '~/Themes';
 import ButtonDefault from '~/Components/Button';
 import { SCREEN } from '~/Services/NavigationService';
 import { saveToken } from '~/Services/AuthService';
@@ -77,7 +77,7 @@ export default class LoginScreen extends ValidationComponent {
         <KeyboardAwareScrollView contentContainerStyle={commom.flex_1}>
           <View style={[commom.container]}>
           <View style={styles.logoWrap}>
-            <Image style={styles.logo} source={require('../../Assets/Images/logo.png')}/>
+            <Image style={styles.logo} source={Images.logo}/>
           </View>
           <View style={styles.inputWrap}>
             <TextInput 

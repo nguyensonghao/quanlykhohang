@@ -21,13 +21,19 @@ export default StyleSheet.create({
   pr20: {
     paddingRight: 20
   },
+  px15: {
+    paddingHorizontal: 15
+  },
+  mx15: {
+    marginHorizontal: 15
+  },
   mt20: {
     marginTop: 20
   },
   mt35: {
     marginTop: 35
   },
-  pd35: {
+  pt35: {
     paddingTop: 35
   },
   p0: {
