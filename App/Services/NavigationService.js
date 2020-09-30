@@ -58,5 +58,8 @@ export const SCREEN = {
   LIST_ORDER: {
     NAME: 'LIST_ORDER_SCREEN',
     TITLE: 'Đơn hàng'
+  },
+  SPLASH: {
+    NAME: 'SPLASH_SCREEN'
   }
 }

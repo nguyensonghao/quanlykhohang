@@ -5,9 +5,11 @@ import {
   TouchableHighlight
 } from 'react-native';
 
+import { STATUS_CODE } from '~/Constants/Config';
 import { SCREEN } from '~/Services/NavigationService';
 import { commom } from '~/Themes';
 import NotificationItem from '~/Components/NotificationItem/NotificationItem';
+import { getList as getListNotification } from '~/Services/NotificationService';
 
 class ListNotificationScreen extends Component {
   constructor(props) {
@@ -17,18 +19,13 @@ class ListNotificationScreen extends Component {
     }
   }
 
-  componentDidMount() {
-    const mocks = [];
-    for (let i = 0; i < 20; i++) {
-      mocks.push({
-        id: i.toString(),
-        title: `Thong bao ${i}`
+  async componentDidMount() {
+    const res = await getListNotification();
+    if (res.status === STATUS_CODE.SUCCESS) {
+      this.setState({
+        listNoti: res.data
       })
-    }
-
-    this.setState({
-      listNoti: mocks
-    })    
+    }        
   }
 
   viewNotification(notification) {

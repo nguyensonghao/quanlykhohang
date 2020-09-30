@@ -7,3 +7,6 @@ export const WEBSITE = {
 	NAME: 'chuyenhanghieu.com',
 	LINK: 'https://chuyenhanghieu.com'
 }
+export const STORAGE_KEY = {
+  TOKEN: 'TOKEN_LOGIN'
+}
